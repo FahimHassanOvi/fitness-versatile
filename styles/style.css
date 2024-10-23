@@ -70,7 +70,8 @@ footer {
 .background-black {
     background-color: black;
 }
-.vid{
+
+.vid {
     display: none;
 }
 
@@ -271,28 +272,33 @@ nav ul a {
 .habit img {
     border-radius: 50%;
 }
+
 /* price section style */
-.price-container{
+.price-container {
     margin-top: 100px;
 }
-.price-sub-title{
-color: white;
-font-size: 1rem;
-font-weight: 500;
+
+.price-sub-title {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
 }
-.price-title{
+
+.price-title {
     margin-top: 20px;
     color: #E6533C;
     font-size: 3rem;
     font-weight: 900;
 }
-.price-list-container{
+
+.price-list-container {
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
 }
-.price-list{
+
+.price-list {
     border-radius: 20px;
     padding: 20px 20px;
     border: 1px solid #E6533C;
@@ -300,10 +306,12 @@ font-weight: 500;
     background: rgba(255, 255, 255, 0.1);
     /* opacity: 20; */
 }
-.price-list .habit-description{
+
+.price-list .habit-description {
     margin-top: 20px;
 }
-.price-content{
+
+.price-content {
     text-align: center;
 }
 
@@ -333,14 +341,51 @@ font-weight: 500;
     border-radius: 18px;
 }
 
+/* BMI section style */
+.bmi-content {
+    max-width: 671px;
+    margin: 78px auto 88px;
+}
+
+.bmi-container {
+    background: rgb(34, 34, 34);
+}
+
+.chart-title {
+    color: rgb(255, 255, 255);
+    font-size: 1.75rem;
+    font-weight: 900;
+}
+/* table style */
+table{
+border-collapse: collapse;
+/* max-width: 310px; */
+max-height: 216px;
+}
+table th{
+    color: rgb(255, 255, 255);
+font-size: 1rem;
+font-weight: 500;
+padding: 15px 23px;
+text-align: left;
+border: 1px solid rgba(255, 255, 255, 0.1);
+}
+table td{
+    color: rgba(255, 255, 255, 0.5);
+font-size: 0.875rem;
+font-weight: 400;
+border: 1px solid rgba(255, 255, 255, 0.1);
+padding: 13px 41px 13px 24px;
+text-align: left;
+}
+
 
 /* Team style start */
 .team-container {
     margin-top: 88px;
 }
-.price-sub-title{
 
-}
+.price-sub-title {}
 
 .team-content {
     text-align: center;
@@ -571,10 +616,12 @@ font-weight: 500;
     .run-img {
         width: 100%;
     }
+
     /* price section */
-    .price-list-container{
+    .price-list-container {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .price-container {
         padding: 20px;
     }

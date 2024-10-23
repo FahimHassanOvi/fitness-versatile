@@ -1,0 +1,602 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/miama');
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+.display-flex {
+    display: flex;
+}
+
+#miami {
+    font-family: 'Miama', sans-serif;
+    Font-weight: 400;
+    Font-size: 4.8rem;
+    color: rgb(255, 255, 255);
+
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+    /* opacity: 100%; */
+    background-color: black;
+
+}
+
+footer {
+    background: rgba(255, 255, 255, 0.1);
+    margin-top: 88px;
+    padding-top: 66px;
+}
+
+/* shared styles */
+.white {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.habit-description {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.btn-primary {
+    width: 224px;
+    height: 54px;
+    padding: 16px 40px 16px 40px;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+}
+
+.background-black {
+    background-color: black;
+}
+.vid{
+    display: none;
+}
+
+
+
+/* banner styles */
+.banner-content-container,
+.compact-width {
+    max-width: 1060px;
+    margin: 0px auto;
+}
+
+nav {
+    align-items: center;
+    justify-content: space-between;
+    /* margin-top: 57px; */
+    padding-top: 57px;
+}
+
+nav ul {
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 57px;
+}
+
+nav ul a {
+    text-decoration: none;
+    font-size: 1.12rem;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+
+.hide {
+    display: none;
+    background: transparent;
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+}
+
+.nav-title {
+    color: rgb(230, 83, 60);
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.banner-title {
+    color: rgb(255, 255, 255);
+    font-size: 4.8rem;
+    font-weight: 900;
+}
+
+.banner-description {
+    margin-top: 28px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.download-btn {
+    width: 224px;
+    height: 54px;
+    padding: 16px 40px 16px 40px;
+    border-radius: 42px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 28px;
+    border: 1px solid white;
+}
+
+.banner {
+    margin-top: 32px;
+    gap: 87.95px;
+    /* margin-bottom: 76px; */
+    padding-bottom: 120px;
+}
+
+.banner-content {
+    margin-top: 64px;
+    max-width: 520px;
+}
+
+.banner-content>.btn-primary,
+.download-btn {
+    margin-top: 28px;
+}
+
+.banner-img-num-1 {
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.banner-img-num-2 {
+    color: rgb(250, 250, 249);
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.banner-img-num-1-description {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.banner-img-num-2-description {
+    color: rgba(239, 237, 232, 0.65);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.video-number-1,
+.video-number-2 {
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    /* filter: blur(8px); */
+}
+
+.number-container {
+    /* border: 2px solid rebeccapurple; */
+    /* max-width: 349px; */
+    /* justify-items: space-between; */
+}
+
+.video-number-1 {
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 193px;
+    height: 98px;
+    /* border: 1px solid red; */
+    margin-top: -380px;
+    margin-left: 230px;
+}
+
+.video-number-2 {
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    width: 206px;
+    height: 96px;
+    margin-top: -160px;
+    margin-left: -100px;
+}
+
+.dot {
+    height: 40px;
+    width: 40px;
+    background-color: #E6533C;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* habits style  */
+.habits-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-top: 58px;
+}
+
+.habit-img-title {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.habit-content {
+    text-align: center;
+}
+
+.habit-content .habit-description {
+    margin-top: 14px;
+}
+
+.habit {
+    /* border: 1px solid #E6533C; */
+    width: 231px;
+    height: 274px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+}
+
+.habit img {
+    border-radius: 50%;
+}
+/* price section style */
+.price-container{
+    margin-top: 100px;
+}
+.price-sub-title{
+color: white;
+font-size: 1rem;
+font-weight: 500;
+}
+.price-title{
+    margin-top: 20px;
+    color: #E6533C;
+    font-size: 3rem;
+    font-weight: 900;
+}
+.price-list-container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+.price-list{
+    border-radius: 20px;
+    padding: 20px 20px;
+    border: 1px solid #E6533C;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    /* opacity: 20; */
+}
+.price-list .habit-description{
+    margin-top: 20px;
+}
+.price-content{
+    text-align: center;
+}
+
+/* Run section style start */
+.run-container {
+    background-color: #222222;
+    border-radius: 18px;
+    display: grid;
+    grid-template-columns: 443px 366px;
+    gap: 165px;
+    padding: 30px 30px 29px 54px;
+    margin-top: 100px;
+
+}
+
+.run-content .habit-description {
+    margin-top: 14px;
+}
+
+.run-content>.btn-primary {
+    margin-top: 34px;
+}
+
+.run-img-container {}
+
+.run-img {
+    border-radius: 18px;
+}
+
+
+/* Team style start */
+.team-container {
+    margin-top: 88px;
+}
+.price-sub-title{
+
+}
+
+.team-content {
+    text-align: center;
+}
+
+.team-content>.habit-description {
+    margin-top: 14px;
+}
+
+.team-member-1 {
+    border-radius: 18px;
+    background: rgba(0, 0, 0, 0.2) url(../images/trainer1.png);
+    background-size: cover;
+    background-position: center;
+    height: 272px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.team-member-2 {
+    border-radius: 18px;
+    background: rgba(0, 0, 0, 0.2) url(../images/trainer2.png);
+    background-size: cover;
+    background-position: center;
+    height: 272px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.team-member-3 {
+    border-radius: 18px;
+    background: rgba(0, 0, 0, 0.2) url(../images/trainer3.png);
+    background-size: cover;
+    background-position: center;
+    height: 272px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.team-member-4 {
+    border-radius: 18px;
+    background: rgba(0, 0, 0, 0.2) url(../images/trainer4.png);
+    background-size: cover;
+    background-position: center;
+    height: 272px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.team-member-5 {
+    border-radius: 18px;
+    background: rgba(0, 0, 0, 0.2) url(../images/trainer5.png);
+    background-size: cover;
+    background-position: center;
+    height: 272px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.team-member-6 {
+    border-radius: 18px;
+    background: rgba(0, 0, 0, 0.2) url(../images/trainer6.png);
+    background-size: cover;
+    background-position: center;
+    height: 272px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+
+.team-members {
+    margin-top: 58px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* footer section style */
+.fitness-title {
+    color: rgb(230, 83, 60);
+    font-size: 4.3rem;
+    font-weight: 800;
+}
+
+.fitness>.habit-description {
+    margin-top: 20px;
+}
+
+.contact-title {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.contact-information ul {
+    padding-left: 0px;
+}
+
+.contact-information ul li {
+    list-style: none;
+    margin-top: 20px;
+
+}
+
+.contact-information ul a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.4rem;
+    font-weight: 400;
+
+}
+
+.contact-information {
+    /* border: 1px solid blue; */
+    text-align: left;
+}
+
+.footer-container {
+    display: grid;
+    /* grid-template-columns: repeat 2.44fr (2, 1fr); */
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: 443px 178px 178px;
+    justify-content: space-between
+}
+
+.right-container {
+    height: 95px;
+    margin-top: 79px;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    align-content: center;
+    text-align: center;
+}
+
+.right {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+/* Responsive for mobile  */
+@media screen and (max-width: 576px) {
+
+    /* For banner section style */
+    .li-item {
+        display: none;
+    }
+
+    .hide {
+        display: inline;
+    }
+
+    .banner {
+        /* border: 2px solid red; */
+        margin-top: 0px;
+        flex-direction: column;
+        gap: 48px;
+        padding: 50px 20px 0px 20px;
+        /* padding-bottom: 160px; */
+    }
+
+    .banner-content-container {
+        padding: 50px 20px 140px 20px;
+    }
+
+    .banner-img img {
+        width: 100%;
+    }
+
+    .double-btn {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .video-number-1 {
+        width: 145.91px;
+        height: 74.09px;
+        margin-left: 160px;
+        margin-bottom: 80px;
+    }
+
+    .video-number-2 {
+        width: 155.74px;
+        height: 72.58px;
+        margin-left: 20px;
+    }
+
+
+    /* habit style */
+    .habits-container {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        /* padding: 20px; */
+    }
+
+    .habit-content {
+        padding-left: 38px;
+        padding-right: 38px;
+    }
+
+    /* run style */
+    .run-container {
+        grid-template-columns: repeat(1, 287px);
+        gap: 30px;
+    }
+
+    .run-img {
+        width: 100%;
+    }
+    /* price section */
+    .price-list-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .price-container {
+        padding: 20px;
+    }
+
+    /* Team related style */
+    .team-members {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .team-container {
+        padding-left: 42px;
+        padding-right: 42px;
+    }
+
+    /* footer style */
+    .footer-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+    }
+
+    footer {
+        padding: 44px 20px 0px 20px;
+    }
+
+}

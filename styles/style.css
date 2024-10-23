@@ -342,13 +342,18 @@ nav ul a {
 }
 
 /* BMI section style */
-.bmi-content {
-    max-width: 671px;
-    margin: 78px auto 88px;
+.bmi-background {
+    background: rgb(34, 34, 34);
 }
 
 .bmi-container {
-    background: rgb(34, 34, 34);
+    padding-top: 49px;
+    padding-bottom: 52px;
+}
+
+.bmi-content {
+    max-width: 671px;
+    margin: 78px auto 88px;
 }
 
 .chart-title {
@@ -356,30 +361,85 @@ nav ul a {
     font-size: 1.75rem;
     font-weight: 900;
 }
+
 /* table style */
-table{
-border-collapse: collapse;
-/* max-width: 310px; */
-max-height: 216px;
+table {
+    margin-top: 52px;
+    border-collapse: collapse;
+    /* max-width: 310px; */
+    max-height: 216px;
 }
-table th{
+
+table th {
     color: rgb(255, 255, 255);
-font-size: 1rem;
-font-weight: 500;
-padding: 15px 23px;
-text-align: left;
-border: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 15px 23px;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
-table td{
+
+table td {
     color: rgba(255, 255, 255, 0.5);
-font-size: 0.875rem;
-font-weight: 400;
-border: 1px solid rgba(255, 255, 255, 0.1);
-padding: 13px 41px 13px 24px;
-text-align: left;
+    font-size: 0.875rem;
+    font-weight: 400;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 13px 41px 13px 24px;
+    text-align: left;
 }
 
+/* BMI calculator style */
+.bmi-calculator {
+    max-width: 557px;
+}
 
+.bmi-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bmi-container .btn-primary {
+    margin-top: 34px;
+}
+
+.bmi-calculator .habit-description {
+    margin-top: 14px;
+}
+
+.input-container {
+    margin-top: 34px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+/* .input-div{
+width: 100%;
+border-radius: 8px;
+
+background: rgba(255, 255, 255, 0.1);
+} */
+.input-container input[type="number"],
+.input-container select {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    height: 48px;
+    /* padding: 12px 40px 12px 20px; */
+
+}
+.factor select{
+    margin-top: 12px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    height: 48px;
+}
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+font-size: 1rem;
+font-weight: 400;
+}
 /* Team style start */
 .team-container {
     margin-top: 88px;

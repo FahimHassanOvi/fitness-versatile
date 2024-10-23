@@ -34,6 +34,7 @@ header {
     /* opacity: 100%; */
     background-color: black;
 
+
 }
 
 footer {
@@ -78,6 +79,7 @@ footer {
 
 
 /* banner styles */
+
 .banner-content-container,
 .compact-width {
     max-width: 1060px;
@@ -342,6 +344,13 @@ nav ul a {
 }
 
 /* BMI section style */
+.bmi-title {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: 900;
+
+}
+
 .bmi-background {
     background: rgb(34, 34, 34);
 }
@@ -457,8 +466,6 @@ select {
 .team-container {
     margin-top: 88px;
 }
-
-.price-sub-title {}
 
 .team-content {
     text-align: center;
@@ -629,6 +636,25 @@ select {
 
     .hide {
         display: inline;
+
+    }
+
+    .vid {
+        display: inline;
+        color: white;
+    }
+    .dot-red{
+        height: 40px;
+        width: 40px;
+        background-color: #E6533C;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dot {
+        display: none;
     }
 
     .banner {
@@ -641,7 +667,7 @@ select {
     }
 
     .banner-content-container {
-        padding: 50px 20px 140px 20px;
+        padding: 0px 20px 140px 20px;
     }
 
     .banner-img img {
@@ -657,14 +683,16 @@ select {
     .video-number-1 {
         width: 145.91px;
         height: 74.09px;
-        margin-left: 160px;
-        margin-bottom: 80px;
+        margin-left: 140px;
+        margin-top: -320px;
+        margin-bottom: 0px;
     }
 
     .video-number-2 {
         width: 155.74px;
         height: 72.58px;
         margin-left: 20px;
+        padding: 15px 0px;
     }
 
 
@@ -684,6 +712,7 @@ select {
     .run-container {
         grid-template-columns: repeat(1, 287px);
         gap: 30px;
+       justify-content: center;
     }
 
     .run-img {
@@ -718,9 +747,22 @@ select {
     footer {
         padding: 44px 20px 0px 20px;
     }
+
     /* BMI style section */
-    .bmi-container{
+    .bmi-container {
         flex-direction: column;
+        gap: 42px;
     }
+
+    .bmi-content {
+        padding: 0px 20px;
+    }
+
+    .bmi-chart-container,
+    .bmi-calculator {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
 
 }
